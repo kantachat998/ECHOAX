@@ -1,0 +1,149 @@
+body{
+	font-family: 'Prompt', sans-serif;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.form-group {
+	margin:10px;
+}
+
+#headca{
+	font-size: 100px;
+	color: white;
+	line-height: 1
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+#log{
+	border-style: none;
+	background-color: white;
+	color: black;
+	border-radius: 4px;
+}
+#fake{
+	font-size: 40px;
+	color: purple;
+	line-height: 1;
+}
+#hoax{
+	font-size: 40px;
+	color: yellow;
+	line-height: 1;
+}
+#phising{
+	font-size: 40px;
+	color: pink;
+	line-height: 1;
+}
+#headsign{
+	font-size: 50px;
+}
+.cardbox{
+	border-style: none;
+	font-size: 40px;
+	width: 100%;
+	float: left;
+}
+.w{
+	color:white;
+}
+.black{
+	color: black;
+}
+ul.navbar-nav li a.nav-link{
+	transform: scale(1);
+	transition: 0.5s;
+	display: block;
+}
+ul.navbar-nav li a.nav-link.hide-item{
+	transform: scale(0);
+}
+.search-form{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 600px;
+	height: 44px;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.search-form input{
+	width: 100%;
+	height: 44px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 5px;
+}
+.search-form.active{
+	opacity: 1;
+	visibility: visible;
+}
+.search-topic{
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	width: 600px;
+	height: 44px;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.search-topic input{
+	width: 100%;
+	height: 44px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 5px;
+}
+.search-topic.active{
+	opacity: 1;
+	visibility: visible;
+}
+.topic.hide-item{
+	transform: scale(0);
+}
+input[name=user]{
+	display: inline-block;
+	border: none;
+	width: 100%;
+}
+.user{
+	background-color: gray;
+	color: white;
+	padding-bottom: 10px;
+}
+.bio{
+	background-color: black;
+	color: white;
+	padding-bottom: 5px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  justify-content: center;
+  margin-left: 50%;
+}
+.bb{
+	background-color: black;
+}
+
+
+
+
+
+
