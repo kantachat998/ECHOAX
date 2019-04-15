@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="http://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -9,11 +10,18 @@
   <link rel="stylesheet" type="text/css" href="BG.css">
   <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
   <title></title>
+  <style>
+    body{
+      background-image:url(ECHOAX-2.png),url(BG-3C.png);
+      background-position: top center;
+      background-repeat: no-repeat,repeat;
+    }
+  </style>
 </head>
-<body background="https://i.imgur.com/2LFNL5m.png">
+<body>  
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="main.html">
-    <img src="https://i.imgur.com/sCp6LdA.png" height="50px" alt="">
+    <img src="https://i.imgur.com/sCp6LdA.png" title="source: imgur.com" height="50px" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,18 +29,19 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-    <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
+    <i id="search" class="fas fa-search fa-2x "></i>
+    
       <li class="nav-item ">
-        <a class="nav-link" href="new.html">NEW</a>
+        <a class="nav-link" href="#">NEW</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">POPULAR</a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link" href="popular.html">POPULAR</a>
-      </li>
-      <li class="nav-item ">
         <a class="nav-link" href="BG3c.html">CATEGORY</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+        <a class="nav-link" href="#">ABOUT US</a>
       </li>      
     </ul>
     <div class="search-form">
@@ -58,6 +67,6 @@
     
   </div>
 </nav>
-<script src="bgjs.js"></script>
+  <script src="bgjs.js"></script>
 </body>
 </html>

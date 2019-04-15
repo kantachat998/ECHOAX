@@ -1,5 +1,21 @@
+@font-face {
+    font-family: 'arca_majora_3heavy';
+    src: url('arcamajora3-heavy-webfont.woff2') format('woff2'),
+         url('arcamajora3-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'arca_majora_3bold';
+    src: url('arcamajora3-bold-webfont.woff2') format('woff2'),
+         url('arcamajora3-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
-	font-family: 'Prompt', sans-serif;
+	font-family: 'arca_majora_3heavy' , 'Prompt', sans-serif;
 }
 .dropdown-toggle::after {
     display:none;
@@ -11,7 +27,7 @@ body{
 #headca{
 	font-size: 100px;
 	color: white;
-	line-height: 1
+	line-height: 1.5;
 }
 .centered {
   position: absolute;
@@ -19,6 +35,21 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
+}
+.topleft {
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  font-size: 150px;
+}
+.bottomleft{
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  font-size: 60px;
+}
+.htop{
+	position: relative;
 }
 #log{
 	border-style: none;
@@ -29,17 +60,17 @@ body{
 #fake{
 	font-size: 40px;
 	color: purple;
-	line-height: 1;
+	line-height: 2;
 }
 #hoax{
 	font-size: 40px;
 	color: yellow;
-	line-height: 1;
+	line-height: 2;
 }
 #phising{
 	font-size: 40px;
 	color: pink;
-	line-height: 1;
+	line-height: 2;
 }
 #headsign{
 	font-size: 50px;
@@ -55,6 +86,9 @@ body{
 }
 .black{
 	color: black;
+}
+.p{
+	color: purple;
 }
 ul.navbar-nav li a.nav-link{
 	transform: scale(1);
@@ -89,7 +123,7 @@ ul.navbar-nav li a.nav-link.hide-item{
 }
 .search-topic{
 	position: absolute;
-	top: 22%;
+	top: 33%;
 	left: 50%;
 	width: 600px;
 	height: 44px;
@@ -128,7 +162,7 @@ input[name=user]{
 	color: white;
 	padding-bottom: 5px;
 }
-button {
+button[name='signbtn'] {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -140,6 +174,92 @@ button {
 }
 .bb{
 	background-color: black;
+}
+input[name='vote'] {
+	border: none;
+	background: none;
+}
+input[value=YES]{
+	color: green;
+}
+input[value=NO]{
+	color: red;
+}
+.backp{
+	background-color: purple;
+}
+.gray{
+	color: gray;
+}
+.pl25{
+	padding-left: 25%;
+}
+article { 
+  display: block;
+  width: 75%;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 2;
+}
+.box{
+	border-style: none;
+	background-color: gray;
+	height: 550px;
+}
+r 	{
+	font-size: 100px;
+	padding-left: 20px;
+	}
+n 	{
+	font-size: 40px;
+	padding-left: 20px;
+	}
+m 	{padding-left: 20px;
+line-height: 5;}
+input[name='edit']{
+	font-size: 10px;
+	width: 50%;
+	border-radius: 5px;
+	background-color: gray;
+	border-style: none;
+}
+.tab {
+  overflow: hidden;
+  border: none;
+}
+
+.tab button {
+  background-color:inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: white;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  padding-bottom: 80px;
+}
+.status:hover{
+	cursor: pointer;
+}
+.column{
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 
