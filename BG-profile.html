@@ -11,10 +11,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 	<title></title>
 </head>
-<body background="BG-profile.png">
+<body background="https://i.imgur.com/Fg7WsNm.png">	
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="main.html">
-    <img src="ECHOAX.png" width="90px" height="50px" alt="">
+    <img src="https://i.imgur.com/sCp6LdA.png" height="50px" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,19 +22,19 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-    <i id="search" class="fas fa-search fa-2x "></i>
+    <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
     
       <li class="nav-item ">
-        <a class="nav-link" href="#">NEW</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="#">POPULAR</a>
+        <a class="nav-link" href="new.html">NEW</a>
       </li>
       <li class="nav-item active ">
+        <a class="nav-link" href="popular.html">POPULAR</a>
+      </li>
+      <li class="nav-item ">
         <a class="nav-link" href="BG3c.html">CATEGORY</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="aboutus.html">ABOUT US</a>
       </li>      
     </ul>
     <div class="search-form">
@@ -42,25 +42,52 @@
         <input type="text" name="" placeholder="SEARCH">
       </form>
     </div> 
-  <a class="nav-link w" href="BG-Sign.html">SIGN UP</a>
-  <a data-toggle="dropdown" class="nav-link " href="#" id="log">Login</a>
-      <ul class="dropdown-menu dropdown-menu-right">          
+  <a data-toggle="dropdown" class="nav-link " href="#" id="log">USERNAME<span class="caret"></span></a>
+      <ul class="dropdown-menu dropdown-menu-right bb">          
         <li>
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Username" required="required">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" required="required">
-            </div>
-              <input type="submit" class="btn btn-primary btn-block" value="Login">
-            </form>
+          <img src="hoax.png" width="100px" height="100px" style="margin-left: 27px">
+          <div class="w"><center>USERNAME</center></div>
+          <div href="BG-profile.html" class="w status" onclick="opentab(event, 'OVERVIEW')">OVERVIEW</div>
+          <div href="BG-profile.html" class="w status" onclick="opentab(event, 'STAT')">STAT</div>
+           <input type="submit" class="btn btn-primary btn-block" value="LOG OUT">
         </li>
       </ul>
     
   </div>
 </nav>
-<img src="" width="100px" height="100px">
+<div class="box" style="margin: 100px">
+	<div style="padding-left: 60px;">
+		<img src="Phishing.png" width="20%" height="20%" style="float: left; padding-top: 10px;">
+		<h class="w"><r> Username </r><br><n> Firstname Lastname </n><br><m> motto. </m></h>
+	</div>
+	<div class="card" style="float: left;">
+		<hd>GENDER</hd>
+		xxxxxx
+		<hd>BIRTH DATE</hd>
+		xx xx xx
+		<hd>LOCATION</hd>
+		xxxxxxxxxxxxxxxx
+		<hd>PHONE NUMBER</hd>
+		+00 000000000
+		<center><input type="button" name="edit" value="EDIT PROFILE"></center>
+	</div>
+	<div class="tab" style="padding-left: 12px;">
+  		<button class="tablinks active" onclick="opentab(event, 'OVERVIEW')">OVERVIEW</button>
+  		<button class="tablinks" onclick="opentab(event, 'STAT')">STAT</button>
+  		<button href="ECHO.html" class="w" style="float: right; background-color: red;">ECHO</button>
+	</div>
+	<div id="OVERVIEW" class="tabcontent" style="display: block; ">
+  	<h3>E-mail</h3>
+  	<p>XXXXXX@XXXX.COM</p>
+	</div>
+
+<div id="STAT" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+
+</div>
 <script src="bgjs.js"></script>
 </body>
 </html>
