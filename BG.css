@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'arca_majora_3heavy';
-    src: url('arcamajora3-heavy-webfont.woff2') format('woff2'),
-         url('arcamajora3-heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
     font-family: 'arca_majora_3bold';
     src: url('arcamajora3-bold-webfont.woff2') format('woff2'),
          url('arcamajora3-bold-webfont.woff') format('woff');
