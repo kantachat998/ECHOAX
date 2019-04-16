@@ -7,7 +7,7 @@
 
 }
 body{
-	font-family: 'arca_majora_3heavy' , 'Prompt', sans-serif;
+	font-family: 'arca_majora_3bold' , 'Prompt', sans-serif;
 }
 .dropdown-toggle::after {
     display:none;
