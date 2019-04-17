@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'arca_majora_3heavy';
+    src: url('arcamajora3-heavy-webfont.woff2') format('woff2'),
+         url('arcamajora3-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'arca_majora_3bold';
     src: url('arcamajora3-bold-webfont.woff2') format('woff2'),
          url('arcamajora3-bold-webfont.woff') format('woff');
@@ -6,6 +14,22 @@
     font-style: normal;
 
 }
+html{
+	height: 100%;
+}
+.bg{
+    	background-repeat: no-repeat;
+     	background-size: cover;
+      	background-position: center;
+      	height: 100%;
+    }
+.bgmain{
+    	background-image:url(https://i.imgur.com/glax40v.png),url(https://i.imgur.com/Fg7WsNm.png);
+    	background-repeat: no-repeat;
+      	background-size: contain,cover;
+      	background-position: center;
+      	height: 100%;
+    }
 body{
 	font-family: 'arca_majora_3bold' , 'Prompt', sans-serif;
 }
@@ -51,12 +75,12 @@ body{
 }
 #fake{
 	font-size: 40px;
-	color: purple;
+	color: #b1b1ff;
 	line-height: 2;
 }
 #hoax{
 	font-size: 40px;
-	color: yellow;
+	color: #fefe99;
 	line-height: 2;
 }
 #phising{
@@ -69,9 +93,7 @@ body{
 }
 .cardbox{
 	border-style: none;
-	font-size: 40px;
-	width: 100%;
-	float: left;
+	font-size: 30px;
 }
 .w{
 	color:white;
@@ -80,7 +102,7 @@ body{
 	color: black;
 }
 .p{
-	color: purple;
+	color: #b1b1ff;
 }
 ul.navbar-nav li a.nav-link{
 	transform: scale(1);
@@ -114,8 +136,7 @@ ul.navbar-nav li a.nav-link.hide-item{
 	visibility: visible;
 }
 .search-topic{
-	position: absolute;
-	top: 33%;
+	position: fixed;
 	left: 50%;
 	width: 600px;
 	height: 44px;
@@ -142,17 +163,19 @@ ul.navbar-nav li a.nav-link.hide-item{
 input[name=user]{
 	display: inline-block;
 	border: none;
-	width: 100%;
+	width: 90%;
+	height: 30px;
+	border-radius: 5px;
+	resize: vertical;
 }
 .user{
 	background-color: gray;
-	color: white;
 	padding-bottom: 10px;
 }
 .bio{
 	background-color: black;
-	color: white;
-	padding-bottom: 5px;
+	padding: 5px 0px 5px 0px;
+	line-height: 1;
 }
 button[name='signbtn'] {
   background-color: #4CAF50;
@@ -161,8 +184,7 @@ button[name='signbtn'] {
   border: none;
   cursor: pointer;
   opacity: 0.9;
-  justify-content: center;
-  margin-left: 50%;
+  justify-content: center
 }
 .bb{
 	background-color: black;
@@ -176,9 +198,6 @@ input[value=YES]{
 }
 input[value=NO]{
 	color: red;
-}
-.backp{
-	background-color: purple;
 }
 .gray{
 	color: gray;
@@ -196,18 +215,20 @@ article {
 .box{
 	border-style: none;
 	background-color: gray;
-	height: 550px;
+	padding: 25px;
+	margin-top: 40px;
+	width: 900px;
 }
 r 	{
 	font-size: 100px;
-	padding-left: 20px;
+	line-height: 1;
 	}
 n 	{
 	font-size: 40px;
-	padding-left: 20px;
+	line-height: 1;
 	}
-m 	{padding-left: 20px;
-line-height: 5;}
+m 	{
+	line-height: 1;}
 input[name='edit']{
 	font-size: 10px;
 	width: 50%;
@@ -250,11 +271,81 @@ input[name='edit']{
 	cursor: pointer;
 }
 .column{
-	margin-left: 25px;
-	margin-right: 25px;
+	padding: 10px 20px 10px 20px;
+}
+.echo{
+	background-color: black;
+	color: white;
+	padding: 25px;
+	width: 900px;
+}
+textarea[name=echo],input[name=echo]{
+	display: inline-block;
+	border: none;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	resize: vertical;
 }
 
+.card {
+    max-width: 100%;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+.col-40 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+.col-60{
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+@media only screen and (max-device-width: 600px){
+  .col-30, .col-70 {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px 0px 5px 0px;
+  }
+}
+.greenbtn{
+	border: none;
+	background-color: green;
+}
+.redbtn{
+	border: none;
+	background-color: red;
+}
+.backphish{
+	background-color: #ffa6a6;
+}
+.backp{
+	background-color: #b1b1ff;
+}
+.backhoax{
+	background-color: #fefe99;
+}
 
 
 

@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 	<title></title>
 </head>
-<body background="https://i.imgur.com/TniTm3s.png" class="bg">
+<body background="https://i.imgur.com/gaFKvWi.png" style="background-position: center;">	
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="main.html">
     <img src="https://i.imgur.com/sCp6LdA.png" height="50px" alt="">
@@ -23,10 +23,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
-    <li class="nav-item ">
+    
+      <li class="nav-item ">
         <a class="nav-link" href="new.html">NEW</a>
       </li>
-      <li class="nav-item active ">
+      <li class="nav-item ">
         <a class="nav-link" href="popular.html">POPULAR</a>
       </li>
       <li class="nav-item ">
@@ -34,96 +35,83 @@
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="aboutus.html">ABOUT US</a>
-      </li>    
+      </li>      
     </ul>
     <div class="search-form">
       <form>
         <input type="text" name="" placeholder="SEARCH">
       </form>
     </div> 
-  <a class="nav-link w" href="BG-Sign.html">SIGN UP</a>
-  <a data-toggle="dropdown" class="nav-link " href="#" id="log">Login</a>
-      <ul class="dropdown-menu dropdown-menu-right">         
+  <a data-toggle="dropdown" class="nav-link " href="#" id="log">USERNAME<span class="caret"></span></a>
+      <ul class="dropdown-menu dropdown-menu-right bb">          
         <li>
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Username" required="required">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" required="required">
-            </div>
-              <input type="submit" class="btn btn-primary btn-block" value="Login">
-            </form>
+          <img src="hoax.png" width="100px" height="100px" style="margin-left: 27px">
+          <div class="w"><center>USERNAME</center></div>
+          <a href="BG-profile.html"><div class="w status" onclick="opentab(event, 'OVERVIEW')">OVERVIEW</div></a>
+          <a href="BG-profile.html"><div class="w status" onclick="opentab(event, 'STAT')">STAT</div></a>
+           <input type="submit" class="btn btn-primary btn-block" value="LOG OUT">
         </li>
       </ul>
-    
   </div>
 </nav>
-<div id="headsign" class="w"><center>CREATE YOUR OWN ACCOUNT</center></div>
-
-    
-<div class="container w">
+<center class="w" style ="font-size: 30px"><d style="color: red">ECHO</d> : SEND TO SHARE SOME LIES TO OTHER</center> 
+  <div class="container echo">
   <form action="action_page.php">
-  <center><p class="w">Please fill in this form to create an account.</p></center>
+  
    <div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
       <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
+        <label for="topic">TOPIC</label>
+      </div>
+      <div class="col-70">
+        <input type="text" name="echo" placeholder="" required maxlength="50">
       </div>
     </div>
     <div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
       <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
+        <label for="category">CATEGORY</label>
       </div>
-    </div><div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
+      <div class="col-70">
+      <input type="radio"  name="gender" required>FAKE NEWS
+      <input type="radio"  name="gender" required>HOAX
+      <input type="radio"  name="gender" required>PHISHING
       </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
+    </div>
+    <div class="row">
       <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
+        <label for="desc">DESCRIPTION</label>
       </div>
-    </div><div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
+      <div class="col-70">
+        <textarea  name="echo" placeholder="Write something.." style="height:200px"></textarea>
       </div>
-      <div class="col-60 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
+    </div>
+    <div class="row">
+      <div class="col-30">
+        <label for="picture">PICTURE</label>
       </div>
-      
+      <div class="col-70">
+        <input type="file" name="pic" accept="image/*">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-30">
+        <label for="REFERENCE">REFERENCE</label>
+      </div>
+      <div class="col-70">
+        <input type="text" name="echo" placeholder="" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-30"></div>
+      <div class="col-70">
+        <input type="text" name="echo" placeholder="" required>
+      </div>
     </div>
   <center style="padding-top: 10px;"> 
- <button type="submit" class="signupbtn" name="signbtn">Sign Up</button>
+<button type="submit" class="greenbtn w" name="sendbtn">SEND</button>
+<button type="button" class="redbtn w" name="cancelbtn">CANCEL</button>
 </center>
   </form>
    </div>
-
-     
-  
 <script src="bgjs.js"></script>
 </body>
 </html>
