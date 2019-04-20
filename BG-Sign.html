@@ -66,63 +66,51 @@
     
 <div class="container w">
   <form action="action_page.php">
-  <center><p class="w">Please fill in this form to create an account.</p></center>
+  <center><p class="w">PLEASE FILL IN THIS FORM TO CREATE AN ACCOUNT.</p></center>
    <div class="row">
-      <div class="col-40 ">
+      <div class="col-40">
         <label for="user">USERNAME</label>
         <input type="text" name="user">
+        <label for="email">EMAIL</label>
+        <input type="email" name="user">
+        <label for="password">PASSWORD</label>
+        <input type="pwd" name="user">
+        <label for="password">CONFIRM YOUR PASSWORD</label>
+        <input type="re-pwd" name="user">
       </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
-      </div>
+
+      <div class="col-60 ">
+        <div class="row bio">
+          <div class="col-50s">
+            <label for="firstname">FIRSTNAME</label>
+            <input type="text" name="user" required>
+            <label for="firstname">GENDER</label><br>
+            <div style="line-height: 2">
+              <input type="radio" name="gender" required>    MALE
+              <input type="radio" name="gender" required>  FEMALE<br>
+            </div>
+            <label for="location">LOCATION</label>
+            <input type="text" name="user" required>
+          </div>
+          <div class="col-50s">
+            <label for="lastname">LASTNAME</label>
+            <input type="text" name="user" required>
+            <label for="firstname">BIRTHDATE</label>
+            <input type="date" name="user" required>
+            <label for="firstname">FIRSTNAME</label>
+            <input type="text" name="user" required>
+          </div>
+          <label for="bio">BIO</label><br>
+            <center><input type="text" name="bio" maxlength="100" required></center>
+          </div>
+     </div>
     </div>
-    <div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
-      </div>
-    </div><div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-30">
-        <label for="lastname">LASTNAME</label>
-        <input type="text" name="user">
-      </div>
-    </div><div class="row">
-      <div class="col-40 ">
-        <label for="user">USERNAME</label>
-        <input type="text" name="user">
-      </div>
-      <div class="col-60 bio">
-        <label for="firstname">FIRSTNAME</label>
-        <input type="text" name="user">
-      </div>
-      
-    </div>
+   
   <center style="padding-top: 10px;"> 
- <button type="submit" class="signupbtn" name="signbtn">Sign Up</button>
-</center>
+    <button type="submit" class="signupbtn" name="signbtn">SIGN UP</button>
+  </center>
   </form>
-   </div>
+</div>
 
      
   

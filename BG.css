@@ -19,14 +19,21 @@ html{
 }
 .bg{
     	background-repeat: no-repeat;
-     	background-size: cover;
+      	background-position: center center;
+      	background-size: 100% 100%;
+      	background-attachment: fixed;
+    }
+.bgmain{
+    	background-image:url(https://i.imgur.com/glax40v.png),url(https://i.imgur.com/TwdywdI.jpg);
+    	background-repeat: no-repeat;
+      	background-size: contain,cover;
       	background-position: center;
       	height: 100%;
     }
-.bgmain{
-    	background-image:url(https://i.imgur.com/glax40v.png),url(https://i.imgur.com/Fg7WsNm.png);
+.bgus{
+    	background-image:url(https://i.imgur.com/TwdywdI.jpg);
     	background-repeat: no-repeat;
-      	background-size: contain,cover;
+      	background-size: cover;
       	background-position: center;
       	height: 100%;
     }
@@ -41,16 +48,25 @@ body{
 }
 
 #headca{
-	font-size: 100px;
+	font-size: 150px;
 	color: white;
-	line-height: 1.5;
+}
+@media only screen and (max-device-width: 768px){
+  #headca{
+  	font-size: 70px;
+}
+}
+@media only screen and (max-device-width: 370px){
+  #headca{
+  	font-size: 50px;
+}
 }
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 40px;
 }
 .topleft {
   position: absolute;
@@ -112,6 +128,12 @@ ul.navbar-nav li a.nav-link{
 ul.navbar-nav li a.nav-link.hide-item{
 	transform: scale(0);
 }
+@media only screen and (max-device-width: 600px){
+  #search{
+  	float: right;
+}
+}
+
 .search-form{
 	position: absolute;
 	top: 20%;
@@ -173,9 +195,7 @@ input[name=user]{
 	padding-bottom: 10px;
 }
 .bio{
-	background-color: black;
-	padding: 5px 0px 5px 0px;
-	line-height: 1;
+	background-color: #2e2e2e;
 }
 button[name='signbtn'] {
   background-color: #4CAF50;
@@ -208,9 +228,13 @@ input[value=NO]{
 article { 
   display: block;
   width: 75%;
-  word-wrap: break-word;
-  word-break: break-all;
+  overflow-wrap: break-word;
   line-height: 2;
+}
+#usernews { 
+  display: block;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 .box{
 	border-style: none;
@@ -273,11 +297,18 @@ input[name='edit']{
 .column{
 	padding: 10px 20px 10px 20px;
 }
+input[name=bio]{
+	display: inline-block;
+	border: none;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	resize: vertical;	
+}
 .echo{
-	background-color: black;
+	background-color: #2e2e2e;
 	color: white;
 	padding: 25px;
-	width: 900px;
 }
 textarea[name=echo],input[name=echo]{
 	display: inline-block;
@@ -305,37 +336,126 @@ textarea[name=echo],input[name=echo]{
 .col-30 {
   float: left;
   width: 30%;
-  margin-top: 6px;
+}
+.col-30u {
+  float: left;
+  width: 30%;
+  font-size: 20px;
+}
+.col-33{
+  width: 100%;
 }
 .col-40 {
   float: left;
   width: 40%;
+}
+.col-50 {
+  float: left;
+  width: 50%;
   margin-top: 6px;
+  padding: 0px 40px 0px 40px;
+}
+.col-50s {
+  float: left;
+  padding-left: 10px;
+  width: 50%;
+  
 }
 .col-60{
   float: left;
   width: 60%;
-  margin-top: 6px;
 }
 .col-70 {
   float: left;
   width: 70%;
   margin-top: 6px;
 }
-@media only screen and (max-device-width: 600px){
+.col-70u{
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+@media only screen and (min-width: 1025px){
+	.col-33{
+	width: 33%;
+	flex: 0 0 33.333333333%;
+	position:relative;
+}
+}
+@media only screen and (max-width: 1025px){
+	.col-33{
+	width: 100%;
+	flex: 0 0 100%;
+	position:relative;
+}
+}
+@media only screen and (orientation: portrait) {
+  #c1 {
+
+    content: url(https://i.imgur.com/WgaYZTc.png);
+    width: 100%
+  }
+  #c2{
+    content:  url(https://i.imgur.com/52H6WTN.jpg);
+    width: 100%
+  }
+  #c3{
+  	content:  url(https://i.imgur.com/wpr10G5.png);
+  	width: 100%
+  }
+}
+@media only screen and (max-width: 600px){
   .col-30, .col-70 {
     width: 100%;
     margin-top: 0;
     padding: 5px 0px 5px 0px;
   }
 }
+@media only screen and (max-width: 990px){
+  .col-70u {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px 0px 5px 0px;
+  }
+}
+@media (orientation: portrait) {
+  .col-50 {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .col-50 {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+}
+
 .greenbtn{
+	border-radius: 6px;
+	margin: 5px;
+	padding: 10px;
 	border: none;
 	background-color: green;
 }
 .redbtn{
+	border-radius: 6px;
+	margin: 5px;
+	padding: 10px;
 	border: none;
 	background-color: red;
+}
+.yelbtn{
+	border-radius: 6px;
+	margin: 5px;
+	padding: 10px;
+	border: none;
+	background-color: yellow;
+
 }
 .backphish{
 	background-color: #ffa6a6;
