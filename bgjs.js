@@ -4,13 +4,14 @@ $(document).ready(function(){
 		$('.search-form').toggleClass('active')
 	})
 
-	$('#searchbtn').click(function(){
+	$('#searchbtn').click(function(e){
 		$('.topic').addClass('hide-item')
-		$('.search-topic').addClass('active')
+    $('.search-topic').addClass('active')
+    e.stopPropagation();
+    $("1").attr("focus","focused");
 	})
 
-$("input:text").blur(function(e) {
-        e.stopPropagation();
+$("input:text").blur(function() {
         $('.search-topic').removeClass('active');
         $('.topic').removeClass('hide-item');
     });
@@ -32,3 +33,14 @@ function opentab(evt, status) {
   document.getElementById(status).style.display = "block";
   evt.currentTarget.className += " active";
 }
+$(window).resize(function () {
+  if ($(window).width() >= 1200  ) {
+    $(".btnedit1").removeClass("hidden");
+    $(".btnedit2").removeClass("active");
+  }
+  else{
+    $(".btnedit1").addClass("hidden");
+    $(".btnedit2").addClass("active");
+  }
+});
+

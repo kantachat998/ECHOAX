@@ -15,16 +15,20 @@
 </head>
 <body background="https://i.imgur.com/MjBOCeH.png">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="main.html">
-    <img src="https://i.imgur.com/sCp6LdA.png" height="50px" alt="" style="padding-top: 5px;">
-  </a>
-  <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="main.html">
+  <img src="https://i.imgur.com/iDxaR3O.png" height="50px" alt="" style="padding-top: 5px;">
+</a>
+<i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="search-form">
+      <form>
+        <input type="text" name="" placeholder="SEARCH">
+      </form>
+    </div>
     <ul class="navbar-nav mr-auto">
-    
       <li class="nav-item ">
         <a class="nav-link" href="new.html">NEW</a>
       </li>
@@ -38,73 +42,68 @@
         <a class="nav-link" href="aboutus.html">ABOUT US</a>
       </li>      
     </ul>
-    <div class="search-form">
-      <form>
-        <input type="text" name="" placeholder="SEARCH">
-      </form>
-    </div> 
   <a class="nav-link w" href="BG-Sign.html">SIGN UP</a>
   <a data-toggle="dropdown" class="nav-link " href="#" id="log">Login</a>
-      <ul class="dropdown-menu dropdown-menu-right">         
-        <li>
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Username" required="required">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Password" required="required">
-            </div>
-              <input type="submit" class="btn btn-primary btn-block" value="Login">
-            </form>
-        </li>
-      </ul>
+  <ul class="dropdown-menu dropdown-menu-right blog">         
+    <li>
+      <form  >
+        <div class="form-group">
+          <label for="user"  class="w">USERNAME</label>
+          <input type="text" class="form-control" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+          <label for="password" class="w">PASSWORD</label>
+          <input type="password" class="form-control" placeholder="Password" required="required">
+        </div>
+         <center><input type="submit" class="greenbtn w" value="Login"></center> 
+        </form>
+    </li>
+  </ul>
   </div>
 </nav>
 <div id="headca"><center>CATEGORY</center></div>
-<div>
+<div >
   <form class="search-topic">
-        <input type="text" name="" placeholder="SEARCH">
+        <input type="text" name="" placeholder="SEARCH" id="1">
   </form>
-  <div id="fake" class="topic"><center><i id="searchbtn" class="fas fa-search"></i>FAKE NEWS</center></div> 
+  <div id="fake" class="topic"><center><img id="searchbtn" src="https://i.imgur.com/P9fd36x.png" ></i>FAKE NEWS</center></div> 
   </div>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>POLITICS</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>POLITICS</center></div></a>
     </div>
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>ECONOMICS</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>ECONOMICS</center></div></a>
     </div>
-     <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>HEALTH</center></div></a>
-    </div>
-  </div>
- </div>
- <br/>
-  <div class="container">
-  <div class="row">
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>CRIME</center></div></a>
-    </div>
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>TECHNOLOGY</center></div></a>
-    </div>
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>SPORT</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>HEALTH</center></div></a>
     </div>
   </div>
  </div>
- <br/>
-<div class="container">
+  <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>ENTERTAINMENT</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>CRIME</center></div></a>
     </div>
-    <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>EDUCATION</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>TECHNOLOGY</center></div></a>
     </div>
-     <div class="col-lg-4  col-12 card">
-      	<a href="polithic.html"><div class=" cardbox black"><center>SCIENCE</center></div></a>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>SPORT</center></div></a>
+    </div>
+  </div>
+ </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>ENTERTAINMENT</center></div></a>
+    </div>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>EDUCATION</center></div></a>
+    </div>
+    <div class="col-lg-4  col-12">
+      	<a href="polithic.html"><div class="card cardbox black"><center>SCIENCE</center></div></a>
     </div>
   </div>
 </div>

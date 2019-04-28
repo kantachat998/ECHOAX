@@ -17,6 +17,10 @@
 html{
 	height: 100%;
 }
+a, a:hover{
+	text-decoration: none;
+	color: inherit;
+}
 .bg{
     	background-repeat: no-repeat;
       	background-position: center center;
@@ -51,12 +55,17 @@ body{
 	font-size: 150px;
 	color: white;
 }
-@media only screen and (max-device-width: 768px){
+#headn{
+	font-size: 12vh;
+	color: #ffffff;
+	margin-left: 5vw;
+}
+@media only screen and (max-width: 768px){
   #headca{
   	font-size: 70px;
 }
 }
-@media only screen and (max-device-width: 370px){
+@media only screen and (max-width: 370px){
   #headca{
   	font-size: 50px;
 }
@@ -70,24 +79,19 @@ body{
 }
 .topleft {
   position: absolute;
-  top: 10%;
-  left: 20px;
-  font-size: 150px;
-}
-.bottomleft{
-  position: absolute;
-  top: 40%;
-  left: 20px;
-  font-size: 60px;
-}
-.htop{
-	position: relative;
+  top: 10px;
+  left: 10px;
+	font-size: 150px;
+	width: 100%;
 }
 #log{
 	border-style: none;
 	background-color: white;
 	color: black;
 	border-radius: 4px;
+}
+#log:hover{
+	cursor: pointer;
 }
 #fake{
 	font-size: 40px;
@@ -106,10 +110,17 @@ body{
 }
 #headsign{
 	font-size: 50px;
+	padding: 1% 1% 1% 1%;
 }
 .cardbox{
 	border-style: none;
 	font-size: 30px;
+	margin: 0;
+}
+.cardbox:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
 }
 .w{
 	color:white;
@@ -128,15 +139,12 @@ ul.navbar-nav li a.nav-link{
 ul.navbar-nav li a.nav-link.hide-item{
 	transform: scale(0);
 }
-@media only screen and (max-device-width: 600px){
-  #search{
-  	float: right;
+#search:hover,#searchbtn:hover{
+	cursor: pointer;;
 }
-}
-
 .search-form{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left: 50%;
 	width: 600px;
 	height: 44px;
@@ -144,6 +152,21 @@ ul.navbar-nav li a.nav-link.hide-item{
 	opacity: 0;
 	visibility: hidden;
 	transition: 0.5s;
+}
+@media only screen and (max-width:768px){
+	.search-form{
+		position: relative;
+		left: 50%;
+		width: 100%;
+		height: auto;
+		transform: translateX(-50%);
+		opacity: 1;
+		visibility: visible;
+		transition: 0.5s;
+	}
+	#search{
+		opacity: 0;
+	}
 }
 .search-form input{
 	width: 100%;
@@ -182,32 +205,93 @@ ul.navbar-nav li a.nav-link.hide-item{
 .topic.hide-item{
 	transform: scale(0);
 }
-input[name=user]{
+input[type=text]{
 	display: inline-block;
 	border: none;
-	width: 90%;
 	height: 30px;
 	border-radius: 5px;
 	resize: vertical;
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
-.user{
-	background-color: gray;
-	padding-bottom: 10px;
+input[type=password]{
+	display: inline-block;
+	border: none;
+	height: 30px;
+	border-radius: 5px;
+	resize: vertical;
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
+input[type=email]{
+	display: inline-block;
+	border: none;
+	height: 30px;
+	border-radius: 5px;
+	resize: vertical;
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+input[type=date]{
+	display: inline-block;
+	border: none;
+	height: 30px;
+	border-radius: 5px;
+	resize: vertical;
+	width: 100%;
+	padding-left: 2%;
+}
+
 .bio{
+	background-color: #555555;
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.biobio{
+	background-color: #555555;
+	padding: 0% 1.5% 2.5% 2.5%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+.useremailpass{
 	background-color: #2e2e2e;
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	
+}
+.bioparam{
+	margin-left: 10%;
+}
+.ntopic{
+	padding-top: 1vh;
+	font-size: 4vh;
+}
+.ndes{
+	color: #414141;
+	font-size: 2vh;
+}
+.ndt{
+	color: #414141;
+	font-size: 1.5vh;
 }
 button[name='signbtn'] {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
+	padding: 14px 20px;
+	border-radius: 5px;
   border: none;
   cursor: pointer;
   opacity: 0.9;
-  justify-content: center
+	justify-content: center;
 }
 .bb{
 	background-color: black;
+}
+.blog{
+	background-color: #222222;
 }
 input[name='vote'] {
 	border: none;
@@ -297,14 +381,6 @@ input[name='edit']{
 .column{
 	padding: 10px 20px 10px 20px;
 }
-input[name=bio]{
-	display: inline-block;
-	border: none;
-	width: 100%;
-	height: 30px;
-	border-radius: 5px;
-	resize: vertical;	
-}
 .echo{
 	background-color: #2e2e2e;
 	color: white;
@@ -317,10 +393,13 @@ textarea[name=echo],input[name=echo]{
 	height: 40px;
 	border-radius: 5px;
 	resize: vertical;
+	padding-left: 2%;
+	padding-right: 2%;
 }
-
 .card {
-    max-width: 100%;
+		max-width: 100%;
+		margin: 1vw 1vw 1vw 1vw;
+		border-radius: 0%;
 }
 .col-25 {
   float: left;
@@ -345,6 +424,14 @@ textarea[name=echo],input[name=echo]{
 .col-33{
   width: 100%;
 }
+.col-33card{
+	width: 33.33333333333%;
+	align-items: center;
+}
+.col-4-cardc{
+	width: 33.333333333333%;
+	padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+}
 .col-40 {
   float: left;
   width: 40%;
@@ -357,9 +444,14 @@ textarea[name=echo],input[name=echo]{
 }
 .col-50s {
   float: left;
-  padding-left: 10px;
+  padding-left: 2%;
   width: 50%;
   
+}
+.col-50sl {
+  float: left;
+	width: 50%;
+	padding-left: 1%;
 }
 .col-60{
   float: left;
@@ -374,6 +466,21 @@ textarea[name=echo],input[name=echo]{
   float: left;
   width: 70%;
   margin-top: 6px;
+}
+@media only screen and (max-width: 768px){
+  .col-60 ,.col-40{
+    width: 100%;
+		margin: 0% 3% 0% 3%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .col-50s ,.col-50sl{
+		width: 100%;
+		padding: 0%;
+	}
+	.biobio{
+		padding: 1.5% 1.5% 1.5% 1.5%;
+	}
 }
 @media only screen and (min-width: 1025px){
 	.col-33{
@@ -391,7 +498,6 @@ textarea[name=echo],input[name=echo]{
 }
 @media only screen and (orientation: portrait) {
   #c1 {
-
     content: url(https://i.imgur.com/WgaYZTc.png);
     width: 100%
   }
@@ -466,7 +572,24 @@ textarea[name=echo],input[name=echo]{
 .backhoax{
 	background-color: #fefe99;
 }
-
+.btnedit1{
+	visibility: visible;
+	opacity: 1;
+	padding-top: 10px;
+}
+.btnedit1.hidden{
+	visibility: hidden;
+	opacity: 0;
+	display: none; 
+}
+.btnedit2{
+	visibility: hidden;
+	opacity: 0;
+}
+.btnedit2.active{
+	visibility: visible;
+	opacity: 1;
+}
 
 
 

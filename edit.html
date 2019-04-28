@@ -14,22 +14,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body background="https://i.imgur.com/TniTm3s.png" class="bg">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg top-fixed navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="main.html">
+    </button>
+    <a class="navbar-brand" href="main.html">
         <img src="https://i.imgur.com/iDxaR3O.png" height="50px" alt="" style="padding-top: 5px;">
-      </a>
-      <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="search-form">
-              <form>
+    </a>
+    <i id="search"><img src="https://i.imgur.com/P9fd36x.png" height="50px"></i>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="search-form">
+            <form>
                 <input type="text" name="" placeholder="SEARCH">
-              </form>
-          </div>
-    <ul class="navbar-nav mr-auto" >
-      <li class="nav-item" >
+            </form>
+        </div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
         <a class="nav-link" href="new.html">NEW</a>
       </li>
       <li class="nav-item">
@@ -42,39 +42,37 @@
         <a class="nav-link" href="aboutus.html">ABOUT US</a>
       </li>    
     </ul>
-  <a class="nav-link w" href="BG-Sign.html">SIGN UP</a>
-  <a data-toggle="dropdown" class="nav-link " href="#" id="log">Login</a>
-  <ul class="dropdown-menu dropdown-menu-right blog">         
-    <li>
-      <form  >
-        <div class="form-group">
-          <label for="user"  class="w">USERNAME</label>
-          <input type="text" class="form-control" placeholder="Username" required="required">
-        </div>
-        <div class="form-group">
-          <label for="password" class="w">PASSWORD</label>
-          <input type="password" class="form-control" placeholder="Password" required="required">
-        </div>
-         <center><input type="submit" class="greenbtn w" value="Login"></center> 
-        </form>
-    </li>
-  </ul>
+    <a data-toggle="dropdown" class="nav-link " href="#" id="log">USERNAME<span class="caret"></span></a>
+    <ul class="dropdown-menu dropdown-menu-right bb">          
+      <li>
+        <img src="hoax.png" width="100px" height="100px" style="margin-left: 27px">
+        <div class="w"><center>USERNAME</center></div>
+        <div href="BG-profile.html" class="w status" onclick="opentab(event, 'OVERVIEW')">OVERVIEW</div>
+        <div href="BG-profile.html" class="w status" onclick="opentab(event, 'STAT')">STAT</div>
+         <input type="submit" class="btn btn-primary btn-block" value="LOG OUT">
+      </li>
+    </ul>
   </div>
 </nav>
-<div id="headsign" class="w"><center>CREATE YOUR OWN ACCOUNT</center></div> 
+<div id="headsign" class="w"><center>EDIT YOUR PROFILE</center></div>
+
+    
 <div class="container w">
   <form action="action_page.php">
-  <center><p class="w">PLEASE FILL IN THIS FORM TO CREATE AN ACCOUNT.</p></center>
    <div class="row">
       <div class="col-40 useremailpass">
         <label for="user">USERNAME</label>
-        <input type="text" name="username" placeholder="username">
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" placeholder="example@mail.com">
-        <label for="password">PASSWORD</label>
+        <p class="bioparam">Username</p>
+        <label for="password">OLD PASSWORD</label>
+        <input type="password" name="old-pwd">
+        <label for="password">NEW PASSWORD</label>
         <input type="password" name="pwd">
-        <label for="password">CONFIRM YOUR PASSWORD</label>
+        <label for="password">CONFIRM YOUR NEW PASSWORD</label>
         <input type="password" name="re-pwd">
+        <center class="btnedit1" > 
+            <button class="greenbtn w">FINISH</button>
+            <button class="redbtn w">CANCEL</button>
+        </center>
       </div>
 
       <div class="col-60 ">
@@ -90,16 +88,13 @@
         </div>
         <div class="row bio ">
           <div class="col-50sl">
-            <label for="firstname">GENDER</label><br>
-            <div style="line-height: 2">
-              <input type="radio" name="gender" required>    MALE
-              <input type="radio" name="gender" required>  FEMALE
-            </div>
+            <label for="gender">GENDER</label><br>
+            <p class="bioparam">xxxxxx</p>
           </div>
           <div class="col-50s">
             <label for="birthdate">BIRTHDATE</label>
             <div style="line-height: 1.5">
-              <input type="date" name="birthdate" required>
+              <p class="bioparam">00 XXXXXXXXX 0000</p>
             </div>
           </div> 
         </div>   
@@ -120,10 +115,11 @@
         </div>
      </div>
     </div>
-   
-  <center style="padding:10px 0 10px;"> 
-    <button type="submit" class="signupbtn" name="signbtn">SIGN UP</button>
-  </center>
+    </div>
+    <center class="btnedit2" style="padding-top: 10px;"> 
+        <button class="greenbtn w">FINISH</button>
+        <button class="redbtn w">CANCEL</button>
+    </center>
   </form>
 </div>
 
