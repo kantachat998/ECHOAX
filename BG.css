@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'arca_majora_3heavy';
-    src: url('arcamajora3-heavy-webfont.woff2') format('woff2'),
-         url('arcamajora3-heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
     font-family: 'arca_majora_3bold';
     src: url('arcamajora3-bold-webfont.woff2') format('woff2'),
          url('arcamajora3-bold-webfont.woff') format('woff');
@@ -60,6 +52,13 @@ body{
 	color: #ffffff;
 	margin-left: 5vw;
 }
+@media only screen and (max-width: 768px){
+  #headn{
+		margin: 0%;
+		text-align: center;
+}
+}
+
 @media only screen and (max-width: 768px){
   #headca{
   	font-size: 70px;
@@ -116,10 +115,21 @@ body{
 	border-style: none;
 	font-size: 30px;
 	margin: 0;
+	transition: 0.5s;
+}
+#fakecard{
+	color: #00005c;
+}
+#hoaxcard{
+	color: #505000;
+}
+#hoaxcard:hover{
+	background-color: #fcfc62;
+}
+#fakecard:hover{
+	background-color:#b1b1ff; 
 }
 .cardbox:hover{
-	background-color: black;
-	color: white;
 	cursor: pointer;
 }
 .w{
@@ -309,6 +319,9 @@ input[value=NO]{
 .pl25{
 	padding-left: 25%;
 }
+.ph{
+	overflow-wrap: break-word;
+}
 article { 
   display: block;
   width: 75%;
@@ -325,7 +338,6 @@ article {
 	background-color: gray;
 	padding: 25px;
 	margin-top: 40px;
-	width: 900px;
 }
 r 	{
 	font-size: 100px;
@@ -375,8 +387,12 @@ input[name='edit']{
   background-color: white;
   padding-bottom: 80px;
 }
+.status{
+	margin-left: 10px; 
+}
 .status:hover{
 	cursor: pointer;
+	color: white;
 }
 .column{
 	padding: 10px 20px 10px 20px;
@@ -400,6 +416,15 @@ textarea[name=echo],input[name=echo]{
 		max-width: 100%;
 		margin: 1vw 1vw 1vw 1vw;
 		border-radius: 0%;
+}
+.picphish{
+	width : 200px ;
+	height : 200px;
+}
+@media only screen and (max-width: 768px){
+  .picphish{
+		width: 100%;
+	}
 }
 .col-25 {
   float: left;
@@ -468,7 +493,12 @@ textarea[name=echo],input[name=echo]{
   margin-top: 6px;
 }
 @media only screen and (max-width: 768px){
-  .col-60 ,.col-40{
+  r {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .col-60 ,.col-40,.col-33card,.col-25,.col-75{
     width: 100%;
 		margin: 0% 3% 0% 3%;
   }

@@ -43,4 +43,13 @@ $(window).resize(function () {
     $(".btnedit2").addClass("active");
   }
 });
+$(window).resize(function () {
+  if ($(window).width() <= 767 &&  window.matchMedia("(orientation: portrait)").matches)  {
+    $(".ph.card.backphish.flex-wrap.flex-row").removeClass("flex-row");
+    $(".ph.card.backphish.flex-wrap").removeClass("flex-wrap");
+  }
+  else{
+    $(".ph.card.backphish").addClass("flex-wrap").addClass("flex-row");
 
+  }
+});
