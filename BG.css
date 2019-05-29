@@ -37,9 +37,7 @@ a, a:hover{
 body{
 	font-family: 'arca_majora_3bold' , 'Prompt', sans-serif;
 }
-.dropdown-toggle::after {
-    display:none;
-}
+
 .form-group {
 	margin:10px;
 }
@@ -59,7 +57,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	font-size: 2.5vw;
+	font-size: 25vw;
 }
 
 .topleft {
@@ -68,14 +66,6 @@ body{
   left: 10px;
 	font-size: 150px;
 	width: 100%;
-}
-#login {
-	display: inline;
-	background-color:black;
-	position:fixed;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
 }
 #log{
 	border-style: none;
