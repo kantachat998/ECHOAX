@@ -284,6 +284,16 @@ button[name='signbtn'] {
 .blog{
 	background-color: #222222;
 }
+.voteYes {
+	border: none;
+	background: none;
+	color: green;
+}
+.voteNO {
+	border: none;
+	background: none;
+	color: red;
+}
 input[name='vote'] {
 	border: none;
 	background: none;
@@ -299,13 +309,20 @@ input[value=NO]{
 }
 .pl25{
 	padding-left: 25%;
+	padding-right: 25%;
 }
 .ph{
 	overflow-wrap: break-word;
 }
+.newshead{
+	font-size: 40px;
+}
+.news{
+	font-size: 5em;
+}
 article { 
   display: block;
-  width: 75%;
+  width: 100%;
   overflow-wrap: break-word;
   line-height: 2;
 }
@@ -552,6 +569,16 @@ textarea[name=echo],input[name=echo]{
 		visibility: hidden;
 		opacity: 0;
 	}
+	.pl25{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.news , .newshead{
+		font-size: 26px;
+	}
+	k{
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 1024px){
   #headca{
@@ -649,7 +676,3 @@ textarea[name=echo],input[name=echo]{
     padding: 5px 0px 5px 0px;
   }
 }
-
-
-
-
